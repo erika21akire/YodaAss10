@@ -1,16 +1,13 @@
 using Yoda.ViewModels;
 namespace Yoda.Views;
-
-public partial class YodaAnswerPage : ContentPage
+public partial class FactsPage : ContentPage
 {
-    AnswerViewModel _viewModel;
+     FactViewModel _viewModel;
 
-    public YodaAnswerPage(AnswerViewModel vm)
+    public FactsPage(FactViewModel vm)
     {
         _viewModel = vm;
-
         InitializeComponent();
-
         BindingContext = _viewModel;
     }
 }

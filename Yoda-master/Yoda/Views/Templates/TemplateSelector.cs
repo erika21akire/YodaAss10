@@ -7,7 +7,7 @@ using Yoda.Models;
 
 namespace Yoda.Views.Templates
 {
-    public class ChatMessageTemplateSelector : DataTemplateSelector
+   /* public class ChatMessageTemplateSelector : DataTemplateSelector
     {
         public DataTemplate? InboundTemplate { get; set; }
         public DataTemplate? OutboundTemplate { get; set; }
@@ -16,5 +16,5 @@ namespace Yoda.Views.Templates
         {
             return ((ChatMessage)item).MessageType == Enums.ChatMessageTypeEnum.Inbound ? InboundTemplate : OutboundTemplate;
         }
-    }
+    }*/
 }

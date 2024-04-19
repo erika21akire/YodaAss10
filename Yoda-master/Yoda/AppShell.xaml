@@ -9,7 +9,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:YodaQuestionPage}"
-        Route="YodaQuestionPage" />
+        ContentTemplate="{DataTemplate local:FactsPage}"
+        Route="FactsPage" />
 
 </Shell>

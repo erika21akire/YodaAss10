@@ -35,7 +35,7 @@ namespace Yoda
 
         public static MauiAppBuilder RegisterServices(this MauiAppBuilder mauiAppBuilder)
         {
-            mauiAppBuilder.Services.AddTransient<IAiAssistant, IAiAssistant>();
+            mauiAppBuilder.Services.AddTransient<IAiAssistant, YodaAiAssistant>();
             mauiAppBuilder.Services.AddTransient<ISettings, ConstantSettings>();
 
             // More services registered here.
@@ -45,8 +45,9 @@ namespace Yoda
 
         public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder)
         {
-            mauiAppBuilder.Services.AddSingleton<QuestionViewModel>();
-            mauiAppBuilder.Services.AddSingleton<AnswerViewModel>();
+            mauiAppBuilder.Services.AddSingleton<FactViewModel>();
+            //mauiAppBuilder.Services.AddSingleton<QuestionViewModel>();
+            //mauiAppBuilder.Services.AddSingleton<AnswerViewModel>();
 
             // More view-models registered here.
 
@@ -55,8 +56,7 @@ namespace Yoda
 
         public static MauiAppBuilder RegisterViews(this MauiAppBuilder mauiAppBuilder)
         {
-            mauiAppBuilder.Services.AddSingleton<YodaQuestionPage>();
-            mauiAppBuilder.Services.AddSingleton<YodaAnswerPage>();
+            mauiAppBuilder.Services.AddSingleton<FactsPage>();
 
             // More views registered here.
 

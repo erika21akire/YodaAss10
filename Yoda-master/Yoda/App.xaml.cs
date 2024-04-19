@@ -1,3 +1,5 @@
+using Yoda.Views;
+
 namespace Yoda
 {
     public partial class App : Application

@@ -10,6 +10,7 @@ namespace Yoda.Services.Interfaces
 {
     public interface IAiAssistant
     {
-        ChatResponseMessage GetCompletion(IList<ChatMessage> chatInboundHistory, ChatMessage userMessage);
+
+        Task<ChatMessage> GetCompletion();
     }
 }
